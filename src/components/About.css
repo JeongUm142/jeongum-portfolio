@@ -1,0 +1,106 @@
+
+/* -------------------------
+   ABOUT ME + SKILLS
+------------------------- */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: start;
+}
+
+.about-subtitle {
+    margin: 0 0 36px;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* About Me */
+
+.about-text {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 560px;
+}
+
+.about-text p {
+    margin: 0 0 35px;
+}
+
+/* TECHNICAL SKILLS */
+
+.skill-list {
+    width: 100%;
+}
+
+.skill-row {
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    align-items: start;
+
+    padding: 26px 0;
+    border-bottom: 1px solid var(--border);
+
+    font-size: 20px;
+}
+
+.skill-row:first-child {
+    padding-top: 0;
+}
+
+.skill-row:last-child {
+    border-bottom: none;
+}
+
+/* -------------------------
+   EDUCATION + CERTIFICATIONS
+------------------------- */
+
+.about-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+
+    padding-top: 50px;
+
+    border-top: 1px solid var(--border);
+}
+
+.education-item,
+.certification-item {
+    font-size: 20px;
+}
+
+/* Education */
+
+.education-item {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+
+    gap: 30px;
+
+    margin-bottom: 30px;
+}
+
+.education-item p {
+    margin-top: 4px;
+}
+
+
+/* Certifications */
+
+.certification-item {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+
+    gap: 30px;
+
+    margin-bottom: 30px;
+}
+
+.no-break {
+    white-space: nowrap;
+}

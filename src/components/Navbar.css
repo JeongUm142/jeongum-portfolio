@@ -1,0 +1,28 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    box-sizing: border-box;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--bg);
+}
+
+.nav-menu {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-menu a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.nav-menu a:hover {
+    color: var(--accent);
+}

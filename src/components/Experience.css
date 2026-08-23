@@ -1,0 +1,68 @@
+.experience {
+    padding: 120px 0 120px;
+}
+
+/* -------------------------
+   EXPERIENCE-COMPANY
+------------------------- */
+.experience-company {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--border);
+}
+
+.experience-company h3 {
+    margin: 0 0 8px;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--text-h);
+}
+
+.experience-company p {
+    font-size: 20px;
+}
+
+.experience-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+    font-size: 20px;
+}
+
+
+/* -------------------------
+   EXPERIENCE-LIST
+------------------------- */
+
+.experience-list {
+    margin-top: 20px;
+}
+
+.experience-item {
+    display: grid;
+    grid-template-columns: 100px 280px 1fr;
+    gap: 30px;
+    padding: 40px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.experience-item-number {
+    color: var(--accent);
+    font-size: 20px;
+}
+
+.experience-item h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-h);
+}
+
+.experience-item p {
+    max-width: 750px;
+    font-size: 20px;
+    line-height: 1.65;
+}
