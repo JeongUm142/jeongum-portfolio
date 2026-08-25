@@ -73,15 +73,6 @@ function About() {
                     <h3 className="about-subtitle">Education</h3>
 
                     <div className="education-item">
-                        <span className="education-year">Apr – Sep 2023</span>
-
-                        <div>
-                            <strong>Goodee Academy</strong>
-                            <p>Java Web Developer Training Program</p>
-                        </div>
-                    </div>
-
-                    <div className="education-item">
                         <span className="education-year">2019 – 2023 </span>
 
                         <div>

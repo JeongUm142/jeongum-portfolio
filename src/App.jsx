@@ -2,6 +2,7 @@ import Profile from './components/Profile.jsx'
 import Navbar from "./components/Navbar.jsx";
 import About from "./components/About.jsx";
 import Experience from "./components/Experience.jsx";
+import Projects from "./components/Projects.jsx";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
           <Profile />
           <About/>
           <Experience/>
+          <Projects/>
       </>
   )
 }
