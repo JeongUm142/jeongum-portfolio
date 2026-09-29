@@ -28,16 +28,22 @@ function ProjectCase({
                 <span className="project-case-date">{date}</span>
             </div>
 
-            <div className="project-case-content">
+            <div className={`project-case-content ${!image ? 'no-image' : ''}`}>
                 <div className="project-media">
-                    <img src={image} alt={`${title} screenshot`} />
+                    {image && (
+                        <div className="project-media">
+                            <img src={image} alt={`${title} screenshot`} />
 
-                    <p className="project-image-caption">
-                        {imageCaption}
-                    </p>
+                            {imageCaption && (
+                                <p className="project-image-caption">
+                                    {imageCaption}
+                                </p>
+                            )}
+                        </div>
+                    )}
 
                     {(team || scope) && (
-                        <div className="project-context">
+                        <div className={`project-context ${!image ? 'no-image' : ''}`}>
                             <span className="project-info-label">Project Context</span>
 
                             {team && (

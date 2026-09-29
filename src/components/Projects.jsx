@@ -46,7 +46,8 @@ function Projects() {
                 subtitle="Transportation Management System"
                 date="Apr 2025 – Jun 2025"
                 image={tmsImage}
-                scope="Business Analysis · Database Design · UI Design"
+                imageCaption="Figma prototype created during TMS planning and UI design. All data shown is anonymized sample data."
+                scope="Business Analysis · UI/DB Design · Development · Launch"
                 overview="Contributed to the planning and design of a new transportation management system by analyzing dispatch, transportation, and settlement workflows and translating business requirements into system and UI designs."
                 contributions={[
                     'Analyzed dispatch, transportation, and settlement workflows to define system requirements.',
@@ -58,7 +59,37 @@ function Projects() {
                 ]}
                 outcome="Defined core workflows, data structures, and UI specifications to support the development of the new TMS."
             />
+
+            <ProjectCase
+                number="03"
+                title="Integrated Business Operations System"
+                subtitle="Enterprise Operations & Maintenance"
+                date="Dec 2023 – Mar 2026"
+                scope="Maintenance · Full-Stack Development · Production Support"
+                overview="Supported the stable day-to-day operation of the enterprise system while delivering ongoing bug fixes, feature enhancements, and operational changes."
+                contributions={[
+                    'Analyzed user requests and existing system flows to identify required changes and their impact.',
+                    'Implemented and modified frontend screens, backend logic, and Oracle SQL queries.',
+                    'Built and modified data-oriented business screens using RealGrid.',
+                    'Investigated production issues by reproducing errors and reviewing console logs and SQL queries.',
+                    'Developed and modified external-system integration APIs supporting dispatch, settlement, and payment-management workflows.',
+                    'Deployed assigned changes and performed rollbacks when necessary.'
+                ]}
+                techStack={[
+                    'Java',
+                    'Spring Framework',
+                    'JSP',
+                    'JavaScript',
+                    'Oracle',
+                    'SQL',
+                    'RealGrid'
+                ]}
+                outcome="Improved and maintained the stability of a continuously used enterprise system while delivering ongoing bug fixes, feature enhancements, and operational changes."
+            />
+
         </section>
+
+
 
 
     )

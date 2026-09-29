@@ -113,3 +113,8 @@
 .project-case.reverse .project-case-content {
     grid-template-columns: 0.9fr 1.1fr;
 }
+
+.project-case-content.no-image {
+    grid-template-columns: 0.65fr 1.35fr;
+    gap: 70px;
+}

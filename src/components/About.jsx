@@ -50,7 +50,7 @@ function About() {
                         </div>
 
                         <div className="skill-row">
-                            <strong>Database</strong>
+                            <strong>Databases</strong>
                             <span>Oracle · MariaDB</span>
                         </div>
 
@@ -100,6 +100,7 @@ function About() {
                 </div>
             </div>
         </section>
+
     )
 }
 
