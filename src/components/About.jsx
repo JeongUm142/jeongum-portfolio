@@ -2,7 +2,8 @@ import './About.css'
 import SectionHeader from './SectionHeader.jsx'
 
 
-function About() {
+function About({ language }) {
+    const isKorean = language === 'kr'
     return(
         <section className="about section-container" id="about">
 
@@ -17,18 +18,24 @@ function About() {
 
                     <div className="about-text">
                         <p>
-                            I’m a Java web developer with experience building and maintaining
-                            enterprise web applications.
+                            {isKorean
+                                ? 'ERP 구축과 기업용 업무 시스템 유지보수를 경험하며, 요구사항 분석부터 기능 구현과 운영 이슈 대응까지 다양한 업무를 수행했습니다.'
+                                : 'I have experience with ERP implementation and enterprise system maintenance, covering tasks from requirements analysis and feature development to production issue resolution.'
+                            }
                         </p>
 
                         <p>
-                            I’ve worked on both new development and existing systems, mainly focusing
-                            on backend development while also handling frontend changes when needed.
+                            {isKorean
+                                ? '사용자 요구사항과 기존 시스템의 흐름을 이해한 뒤 필요한 기능을 구현하고, 이후에도 수정과 확장이 용이한 코드를 작성하는 것을 중요하게 생각합니다.'
+                                : 'I focus on understanding user requirements and existing system flows, then implementing practical features with code that is clear, maintainable, and easy to extend.'
+                            }
                         </p>
 
                         <p>
-                            I enjoy building practical features based on user needs and keeping code clear and maintainable.
-                            <br/>I’m continuing to expand my frontend skills alongside my Java and Spring experience.
+                            {isKorean
+                                ? 'Java와 Spring을 중심으로 실무 경험을 쌓아왔으며, 최근에는 React를 활용한 개인 프로젝트를 통해 프론트엔드 개발 역량도 확장하고 있습니다.'
+                                : 'My professional experience is centered on Java and Spring, and I am currently expanding my frontend skills through personal projects using React.'
+                            }
                         </p>
                     </div>
                 </div>
@@ -46,7 +53,7 @@ function About() {
 
                         <div className="skill-row">
                             <strong>Frameworks & Libraries</strong>
-                            <span>Spring Framework · Spring Boot · MyBatis · jQuery · AG Grid · RealGrid</span>
+                            <span>Spring Framework · Spring Boot · MyBatis · React · jQuery · AG Grid · RealGrid</span>
                         </div>
 
                         <div className="skill-row">
@@ -76,9 +83,16 @@ function About() {
                         <span className="education-year">2019 – 2023 </span>
 
                         <div>
-                            <strong>Woosong University</strong>
+                            <strong>{isKorean ? '우송대학교' : 'Woosong University'}</strong>
                             <p>
-                                Bachelor’s Degree in Global Media &<br/> Communication Arts
+                                {isKorean
+                                    ? '글로벌미디어영상학과'
+                                    : <>
+                                        Bachelor’s Degree in Global Media &
+                                        <br />
+                                        Communication Arts
+                                    </>
+                                }
                             </p>
                         </div>
                     </div>

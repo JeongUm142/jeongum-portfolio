@@ -4,17 +4,22 @@ import About from "./components/About.jsx";
 import Experience from "./components/Experience.jsx";
 import Projects from "./components/Projects.jsx";
 import Contact from "./components/Contact.jsx";
+import { useState } from 'react';
 
 function App() {
-  return (
+    const [language, setLanguage] = useState('kr')
+    return (
       // 하나만 반환
       <>
-          <Navbar />
-          <Profile />
-          <About/>
-          <Experience/>
-          <Projects/>
-          <Contact/>
+          <Navbar
+              language={language} // current lang
+              setLanguage={setLanguage} // new
+          />
+          <Profile language={language} />
+          <About language={language} />
+          <Experience language={language} />
+          <Projects language={language} />
+          <Contact language={language} />
       </>
   )
 }

@@ -26,3 +26,31 @@
 .nav-menu a:hover {
     color: var(--accent);
 }
+
+.language-toggle {
+    display: flex;
+    padding: 3px;
+
+    border: 1px solid var(--border);
+    border-radius: 20px;
+}
+
+.language-toggle button {
+    border: none;
+    background: transparent;
+
+    padding: 6px 10px;
+    border-radius: 16px;
+
+    color: var(--text);
+    font-size: 12px;
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.language-toggle button.active {
+    background: var(--accent);
+    color: white;
+}

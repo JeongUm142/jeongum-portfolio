@@ -1,7 +1,8 @@
 import './Experience.css'
 import SectionHeader from "./SectionHeader.jsx";
 
-function Experience() {
+function Experience({language, setLanguage}) {
+    const isKorean = language === 'kr'
     return(
         <section className='experience section-container' id="experience">
             <SectionHeader number="02" title="Experience" />
@@ -9,12 +10,12 @@ function Experience() {
             <div className="experience-company">
                 <div>
                     <h3>NPC System Co., Ltd.</h3>
-                    <p>Software Developer</p>
+                    <p>{isKorean ? '소프트웨어 개발자' : 'Software Developer'}</p>
                 </div>
 
                 <div className="experience-meta">
-                    <span>Nov 2023 – Mar 2026</span>
-                    <span>South Korea</span>
+                    <span>{isKorean ? '2023.11 – 2026.04' : 'Nov 2023 – Apr 2026'}</span>
+                    <span>{isKorean ? '대한민국' : 'South Korea'}</span>
                 </div>
             </div>
 
@@ -22,32 +23,67 @@ function Experience() {
                 <div className="experience-item">
                     <span className="experience-item-number">01</span>
 
-                    <h4>Operations <br/>& Production Support</h4>
+                    <h4>
+                        {isKorean
+                            ? <>운영 시스템 유지보수<br />& 운영 지원</>
+                            : <>Operations <br />& Production Support</>
+                        }
+                    </h4>
                     <p>
-                        Maintained and enhanced enterprise web applications across frontend, backend, and Oracle database components.
-                        Investigated issues by reproducing errors and reviewing console logs and SQL queries.
+                        {isKorean
+                            ? '프론트엔드, 백엔드, Oracle DB 영역 전반에서 기업용 웹 시스템을 유지보수하고 기능을 개선했습니다. 오류를 재현하고 콘솔 로그와 SQL 쿼리를 확인하여 문제를 분석하고 해결했습니다.'
+                            : 'Maintained and enhanced enterprise web applications across frontend, backend, and Oracle database components. Investigated issues by reproducing errors and reviewing console logs and SQL queries.'
+                        }
                     </p>
                 </div>
 
                 <div className="experience-item">
                     <span className="experience-item-number">02</span>
 
-                    <h4>ERP Implementation</h4>
+                    <h4>
+                        {isKorean ? 'ERP 시스템 구축' : 'ERP Implementation'}
+                    </h4>
                     <p>
-                        Contributed to the development and launch of a new ERP system,
-                        covering requirements analysis, database and UI design,
-                        implementation, deployment, and initial stabilization.
+                        {isKorean
+                            ? '신규 ERP 시스템 구축에 참여하여 요구사항 분석, 데이터베이스 및 UI 설계, 개발, 배포, 초기 안정화까지 수행했습니다.'
+                            : 'Contributed to the development and launch of a new ERP system, covering requirements analysis, database and UI design, implementation, deployment, and initial stabilization.'
+                        }
                     </p>
                 </div>
 
                 <div className="experience-item">
                     <span className="experience-item-number">03</span>
 
-                    <h4>API Integration & TMS</h4>
+                    <h4>
+                        {isKorean
+                            ? '외부 API 연동'
+                            : 'External API Integration'
+                        }
+                    </h4>
+
                     <p>
-                        Developed and modified external-system integration APIs and
-                        contributed to transportation management system analysis,
-                        data-flow design, and Figma-based screen design.
+                        {isKorean
+                            ? '기존 배차 시스템 연동 API를 수정하여 배차지별 재고 현황과 입출고 내역 등 추가 정보를 전달할 수 있도록 연동 기능을 확장했습니다.'
+                            : 'Enhanced an existing API integration with the dispatch system to provide additional data, including inventory levels and inbound/outbound history by dispatch location.'
+                        }
+                    </p>
+                </div>
+
+                <div className="experience-item">
+                    <span className="experience-item-number">04</span>
+
+                    <h4>
+                        {isKorean
+                            ? 'TMS 기획 및 설계'
+                            : 'TMS Planning & Design'
+                        }
+                    </h4>
+
+                    <p>
+                        {isKorean
+                            ? '배차, 운송, 정산 업무 프로세스를 분석하고, 이를 바탕으로 권한 구조와 데이터베이스 테이블을 설계했습니다. 또한 Figma를 활용해 목록 및 상세 화면을 설계했습니다.'
+                            : 'Analyzed dispatch, transportation, and settlement workflows and designed permission structures and database tables based on the business processes. Also designed list and detail screens in Figma.'
+                        }
                     </p>
                 </div>
             </div>

@@ -52,6 +52,11 @@
     margin-bottom: 8px;
 }
 
+.title-kr {
+    display: flex;
+    gap: 0.35em;
+}
+
 
 /* -------------------------
    Divider
@@ -80,4 +85,3 @@
     line-height: 1.5;
     justify-self: start;
 }
-
