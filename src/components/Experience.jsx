@@ -31,7 +31,7 @@ function Experience({language, setLanguage}) {
                     </h4>
                     <p>
                         {isKorean
-                            ? '프론트엔드, 백엔드, Oracle DB 영역 전반에서 기업용 웹 시스템을 유지보수하고 기능을 개선했습니다. 오류를 재현하고 콘솔 로그와 SQL 쿼리를 확인하여 문제를 분석하고 해결했습니다.'
+                            ? '프론트엔드, 백엔드, Oracle DB 영역 전반에서 기업용 업무 시스템을 유지보수하고 기능을 개선했습니다. 오류를 재현하고 콘솔 로그와 SQL 쿼리를 확인하여 문제를 분석하고 해결했습니다.'
                             : 'Maintained and enhanced enterprise web applications across frontend, backend, and Oracle database components. Investigated issues by reproducing errors and reviewing console logs and SQL queries.'
                         }
                     </p>
@@ -45,9 +45,8 @@ function Experience({language, setLanguage}) {
                     </h4>
                     <p>
                         {isKorean
-                            ? '신규 ERP 시스템 구축에 참여하여 요구사항 분석, 데이터베이스 및 UI 설계, 개발, 배포, 초기 안정화까지 수행했습니다.'
-                            : 'Contributed to the development and launch of a new ERP system, covering requirements analysis, database and UI design, implementation, deployment, and initial stabilization.'
-                        }
+                            ? '신규 ERP 시스템 구축에 참여하여 요구사항 분석, 데이터베이스 및 UI 설계, 개발, 초기 안정화 과정까지 함께했습니다.'
+                            : 'Contributed to a new ERP system implementation, covering requirements analysis, database and UI design, development, and initial stabilization.'                        }
                     </p>
                 </div>
 
@@ -81,8 +80,8 @@ function Experience({language, setLanguage}) {
 
                     <p>
                         {isKorean
-                            ? '배차, 운송, 정산 업무 프로세스를 분석하고, 이를 바탕으로 권한 구조와 데이터베이스 테이블을 설계했습니다. 또한 Figma를 활용해 목록 및 상세 화면을 설계했습니다.'
-                            : 'Analyzed dispatch, transportation, and settlement workflows and designed permission structures and database tables based on the business processes. Also designed list and detail screens in Figma.'
+                            ? '배차·운송·정산 업무 프로세스를 분석하고, 이를 바탕으로 권한 구조와 데이터베이스 테이블을 설계했으며 Figma를 활용해 목록 및 상세 화면을 설계했습니다.'
+                            : 'Analyzed dispatch, transportation, and settlement workflows, designed permission structures and database tables based on the requirements, and created list and detail screens in Figma.'
                         }
                     </p>
                 </div>

@@ -9,14 +9,12 @@ function Contact({ language, setLanguage }) {
 
             <div className="contact-content">
                 <div className="contact-message">
-                    <h3>
-                        {isKorean ? '새로운 기회에 열려 있습니다.' : 'Let’s connect.'}
-                    </h3>
+                    <h3>Let’s connect.</h3>
 
                     <p>
                         {isKorean
-                            ? 'Java 웹 개발 경험을 바탕으로 새로운 환경에서도 실무에 기여하며 성장하고자 합니다.'
-                            : 'I’m open to opportunities where I can contribute as a Java web developer and continue growing across backend and full-stack development.'
+                            ? 'Java 웹 개발 경험을 바탕으로 새로운 환경에서도 안정적인 시스템 개발과 운영에 기여하고자 합니다.'
+                            : 'I’m open to opportunities where I can contribute to backend and full-stack development as a Java web developer.'
                         }
                     </p>
                 </div>
