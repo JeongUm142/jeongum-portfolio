@@ -85,3 +85,37 @@
     line-height: 1.5;
     justify-self: start;
 }
+
+/* -------------------------
+   Mobile
+------------------------- */
+@media (max-width: 768px) {
+    .hero {
+        width: 100%;
+
+        grid-template-columns: minmax(0, 0.42fr) 1px minmax(0, 0.58fr);
+        column-gap: clamp(10px, 2.4vw, 18px);
+    }
+
+    .name-block,
+    .intro {
+        min-width: 0;
+    }
+
+    .job-title {
+        font-size: clamp(10px, 2vw, 14px);
+        line-height: 1.4;
+        text-align: right;
+    }
+
+    .title {
+        font-size: clamp(24px, 6vw, 44px);
+    }
+
+    .intro {
+        font-size: clamp(14px, 2.6vw, 17px);
+        line-height: 1.7;
+        word-break: normal;
+        overflow-wrap: anywhere;
+    }
+}

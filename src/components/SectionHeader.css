@@ -32,3 +32,32 @@
     font-weight: 500;
     line-height: 0.9;
 }
+
+/* -------------------------
+   Mobile
+------------------------- */
+@media (max-width: 768px) {
+    .section-header {
+        gap: 12px;
+        margin-bottom: 32px;
+    }
+
+    .section-label {
+        flex-shrink: 0;
+        padding-top: 4px;
+    }
+
+    .section-divider {
+        width: clamp(32px, 6vw, 46px);
+    }
+
+    .section-number {
+        font-size: 24px;
+    }
+
+    .section-title {
+        min-width: 0;
+        font-size: clamp(28px, 6vw, 46px);
+        line-height: 1.05;
+    }
+}

@@ -52,6 +52,15 @@ html {
   box-sizing: border-box;
 }
 
+/* -------------------------
+   Mobile
+------------------------- */
+@media (max-width: 768px) {
+  #root {
+    padding: 0 16px;
+  }
+}
+
 h1,
 h2 {
   font-family: var(--heading);
@@ -100,4 +109,14 @@ code {
   width: min(1300px, calc(100% - 80px));
   margin: 0 auto;
   box-sizing: border-box;
+}
+
+/* -------------------------
+   Mobile
+------------------------- */
+@media (max-width: 768px) {
+  .section-container {
+    width: 100%;
+    min-width: 0;
+  }
 }

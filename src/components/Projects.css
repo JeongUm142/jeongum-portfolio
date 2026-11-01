@@ -22,3 +22,30 @@
     padding-top: 0;
     border-top: none;
 }
+
+/* -------------------------
+   Mobile
+------------------------- */
+@media (max-width: 768px) {
+    .projects .project-context {
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+
+    .projects .project-context.no-image {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .projects .project-context-row {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 6px;
+        margin-top: 14px;
+        line-height: 1.6;
+    }
+
+    .projects .project-context-row > * {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+}

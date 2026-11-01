@@ -20,7 +20,7 @@ function Contact({ language, setLanguage }) {
                 </div>
 
                 <div className="contact-links">
-                    <a href="mailto:jeongum.shin.ca@gmail.com">
+                    <a href="mailto:jeongum.shin00@gmail.com">
                         <span>Email</span>
                         <strong>jeongum.shin00@gmail.com</strong>
                     </a>

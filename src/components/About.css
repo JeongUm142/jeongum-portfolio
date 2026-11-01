@@ -104,3 +104,86 @@
 .no-break {
     white-space: nowrap;
 }
+
+/* -------------------------
+   Mobile
+------------------------- */
+@media (max-width: 768px) {
+    .about .about-grid,
+    .about .about-bottom {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 36px;
+    }
+
+    .about .about-grid > *,
+    .about .about-bottom > *,
+    .about .skill-row > *,
+    .about .education-item > *,
+    .about .certification-item > * {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .about .about-bottom {
+        margin-top: 36px;
+        padding-top: 32px;
+    }
+
+    .about .about-subtitle {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .about .about-text,
+    .about .skill-row,
+    .about .education-item,
+    .about .certification-item {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .about .about-text {
+        max-width: none;
+    }
+
+    .about .about-text p {
+        margin-bottom: 24px;
+    }
+
+    .about .about-text p:last-child {
+        margin-bottom: 0;
+    }
+
+    .about .skill-row,
+    .about .education-item,
+    .about .certification-item {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 8px;
+    }
+
+    .about .skill-row {
+        padding: 20px 0;
+    }
+
+    .about .skill-row:first-child {
+        padding-top: 0;
+    }
+
+    .about .education-item,
+    .about .certification-item {
+        margin-bottom: 20px;
+    }
+
+    .about .education-item:last-child,
+    .about .certification-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .about .skill-row strong br {
+        display: none;
+    }
+
+    .about .no-break {
+        white-space: normal;
+    }
+}

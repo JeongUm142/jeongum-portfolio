@@ -54,3 +54,37 @@
     background: var(--accent);
     color: white;
 }
+
+/* -------------------------
+   Mobile
+------------------------- */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 16px 0;
+        gap: 6px;
+    }
+
+    .nav-logo {
+        flex-shrink: 0;
+        font-size: 14px;
+    }
+
+    .nav-menu {
+        gap: clamp(6px, 1.8vw, 14px);
+    }
+
+    .nav-menu a {
+        font-size: clamp(11px, 2.8vw, 12px);
+        white-space: nowrap;
+    }
+
+    .language-toggle {
+        padding: 2px;
+        flex-shrink: 0;
+    }
+
+    .language-toggle button {
+        padding: 5px;
+        font-size: 10px;
+    }
+}

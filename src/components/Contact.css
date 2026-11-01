@@ -57,3 +57,52 @@
 .contact-message h3 {
     word-break: keep-all;
 }
+
+/* -------------------------
+   Mobile
+------------------------- */
+@media (max-width: 768px) {
+    .contact {
+        padding: 64px 0;
+    }
+
+    .contact .contact-content {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 32px;
+    }
+
+    .contact .contact-content > *,
+    .contact .contact-links a > * {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .contact .contact-message h3 {
+        margin-bottom: 16px;
+        font-size: clamp(28px, 5vw, 34px);
+        line-height: 1.25;
+    }
+
+    .contact .contact-message p {
+        max-width: none;
+        font-size: 16px;
+        line-height: 1.65;
+        word-break: normal;
+    }
+
+    .contact .contact-links a {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 8px;
+        padding: 20px 0;
+    }
+
+    .contact .contact-links span {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .contact .contact-links strong {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
